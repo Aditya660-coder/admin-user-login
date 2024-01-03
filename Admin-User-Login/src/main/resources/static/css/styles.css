@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0; /* Light Gray */
+    color: #333; /* Dark Gray */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* White */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #3498db; /* Blue */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: left;
+    color: #555; /* Gray */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd; /* Light Gray */
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Lighter Gray */
+    color: #333;
+}
+
+input[type="submit"] {
+    background-color: #27ae60; /* Green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.message {
+    background-color: #2ecc71; /* Darker Green */
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+}

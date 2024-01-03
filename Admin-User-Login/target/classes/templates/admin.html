@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #3498db;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #3498db;
+        }
+
+        /* Improved styling for the logout link */
+        span[sec\:authorize="isAuthenticated"] a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #e74c3c;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        span[sec\:authorize="isAuthenticated"] a:hover {
+            background-color: #c0392b;
+        }
+
+        /* Additional styles for a user-friendly interface */
+        .container p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .container a {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .container a:hover {
+            color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Admin Dashboard</h1>
+    </div>
+    <div class="container">
+        <h2>Welcome, [[${user.getFullname()}]]</h2>
+        
+        <span sec:authorize="isAuthenticated">
+            <a th:href="@{/logout}">Logout</a>
+        </span>
+        
+        <p>This is your personalized admin dashboard. Feel free to explore and manage your resources.</p>
+        <p>For any assistance, please contact our support team.</p>
+        <a href="#">View Reports</a>
+    </div>
+</body>
+</html>

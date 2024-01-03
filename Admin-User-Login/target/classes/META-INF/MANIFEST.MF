@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: Admin
+Build-Jdk: 17.0.8.1
+Implementation-Title: Admin-User-Login
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.adityarai1.blog
+Implementation-URL: https://spring.io/projects/spring-boot/Admin-User-Lo
+ gin
+Created-By: Maven Integration for Eclipse
+
